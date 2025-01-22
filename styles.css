@@ -1,0 +1,152 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	background-color: green;
+}
+
+#buttonswrapper {
+	display: block;
+	z-index: 0;
+	border: 5px solid black;
+}
+
+button {
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	border: solid 2px black;
+}
+
+.errormsgwrapper {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	height: 25px;
+	background-color: transparent;
+}
+
+.errormsg {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+
+#cardcontainer {
+	background-color: gray;
+	background-size: 4em 4em;
+	height: 500px;
+	width: 70%;
+	border: 5px solid gray;
+	border-radius: 10px;
+	box-shadow: -15px -15px 10px 20px aquamarine inset;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+#card {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom right, gray, white);
+	border-radius: 50%;
+	position: absolute;
+}
+
+#card:hover {
+	width: 194px;
+	height: 194px;
+	border: 3px solid aquamarine;
+	cursor: pointer;
+}
+
+#carouselcontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 5px #8bcff3;
+	padding: 15px;
+}
+
+/* #imagecontainer > img {
+	opacity: 0;
+	transition: opacity 2000ms ease-out;
+} */
+
+#carouselcontainer > #buttoncontainer {
+	display: flex;
+	align-items: center;
+	height: 25%;
+}
+
+#prevbutton,
+#nextbutton {
+	border-radius: 50%;
+	border: solid 3px black;
+	transition: padding 400ms, margin 400ms, background-color 400ms;
+}
+
+#prevbutton:hover,
+#nextbutton:hover {
+	border-color: #8bcff3;
+	background-color: darkgray;
+	transition: padding 400ms, margin 400ms;
+	padding: 15px;
+	margin: -5px 5px -5px;
+}
+
+#circle1,
+#circle2,
+#circle3 {
+	background-color: gray;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transition: background-color 200ms;
+	margin: 0 3px;
+}
+
+#colorchanger {
+	width: 250px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid 1px black;
+	margin-bottom: 50px;
+}
+
+#colorchanger > #coloredbackground {
+	background-image: linear-gradient(to bottom right, black, black);
+	width: 100%;
+	height: 150px;
+}
+
+#colorchanger > #buttoncontainer {
+	display: flex;
+}
+
+#incrementtext {
+	/* width: 10px; */
+	/* height: 10px; */
+	display: flex;
+	align-items: center;
+}
+
+#sliderswrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 0;
+}

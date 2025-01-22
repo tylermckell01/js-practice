@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Practice</title>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- <script src="snowstorm.js"></script> -->
+		
+	</head>
+	<!-- <canvas>
+	</canvas> -->
+
+	<body>
+
+		<div id="buttonswrapper">
+			<button id="redbutton">red button</button>
+			<button id="bluebutton">blue button</button>
+			<button id="togglebutton">toggle button</button>
+			<button id="indexbutton">index button</button>
+			<button id="annhilationbutton">annhilation button</button>
+		</div>
+		<button id="revivebutton">revive buttons</button>
+
+		<div class="errormsgwrapper">
+			<div id="errormsg" class="errormsg">buttons are already here silly head</div>
+		</div>
+
+		<div id="cardcontainer">
+			<div id="card">Drag me around</div>
+		</div>
+
+		<div id="carouselcontainer">
+			<div id="imagecontainer">
+				<img id="componentimage" alt="domo image" src="/images/img1.png" />
+			</div>
+			<div id="buttoncontainer">
+				<button id="prevbutton"><--</button>
+				<div id="circle1"></div>
+				<div id="circle2"></div>
+				<div id="circle3"></div>
+				<button id="nextbutton">--></button>
+			</div>
+		</div>
+
+		<div id="colorchanger">
+			<div id="coloredbackground"></div>
+			<div id="buttoncontainer">
+				<button id="minusbutton"><--</button>
+				<div id="incrementtext">0</div>
+				<button id="addbutton">--></button>
+			</div>
+		</div>
+
+		<div id="slidercontainer">
+			<div id="sliderswrapper">
+				<div id="colorslidertitle"></div>
+				<input type="range" id="colorslide" min="0" max="2" value="0"></select>
+				
+				<div id="snowslidertitle"></div>
+				<input type="range" id="snowslide" min="0" max="4" value="0"></select>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="/buttons/redBlueButtons.js"></script>
+	<script src="/buttons/toggleBackground.js"></script>
+	<script src="/buttons/indexButton.js"></script>
+	<script src="/buttons/annhilationButton.js"></script>
+	<script src="/buttons/reviveButton.js"></script>
+	<script src="dragnDrop.js"></script>
+	<script src="/carousel.js" type="module"></script>
+	<script src="colorChanger.js"></script>
+	<script src="/sliders/colorSlider.js"></script>
+	<script src="/sliders/snowSlider.js"></script>
+
+</html>
